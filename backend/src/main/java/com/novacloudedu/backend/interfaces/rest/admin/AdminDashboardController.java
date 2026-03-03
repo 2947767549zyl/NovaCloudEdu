@@ -69,6 +69,7 @@ public class AdminDashboardController {
             throw new RuntimeException("非管理员，无权查看内容数据");
         }
         System.out.println("管理员查看内容数据");
+        System.out.println("管理员查看内容数据");
         return ResultUtils.success(dashboardService.getContent(getCurrentUserId()));
     }
 
